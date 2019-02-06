@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+ 
+<html lang="es"><meta charset="utf-8" />
+ 
+<head>
+<title>Ejercicio #3</title>
+ <script >
+     
+    var frase = prompt("Escribe una frase");
+    
+    function frasePalindromo(frase){
+      
+      frase=frase.toLowerCase().replace(/\s/g,"");
+     
+      fraseAlreves=frase.split("").reverse().toString();
+     
+      for (var i = 0; i < ((fraseAlreves.length)-1); i++) {
+        fraseAlreves=fraseAlreves.replace(",","");
+      };
+     
+      if(frase==fraseAlreves){
+        
+        resultado="es un Palindromo";
+      }
+      else{
+       
+        resultado="no es un Palindromo";
+      }
+     
+      document.write("Tu frase "+resultado);
+    }
+   
+    frasePalindromo(frase);
+            
+    </script>
+</head> 
+<body>
+  
+</body>
+</html>

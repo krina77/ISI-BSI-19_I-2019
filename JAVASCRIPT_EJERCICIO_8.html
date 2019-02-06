@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+ 
+<head>
+<script>
+ 
+function enviar() {
+      var mensaje = document.getElementById("mensaje").value;
+      var result = checkType(mensaje);
+ 
+      if (result == '0') {
+          alert('minusculas');
+      }  elseif (checkType('HOLA MUNDO') == '1') {
+          console.log('MAYUSCULAS');
+      } elseif (checkType('Hola Mundo') == '2') {
+          console.log('minusculas - MAYUSCULAS');
+     } else {
+         console.log('El mensaje no incluye letras');
+     }
+}
+ 
+</script>
+ 
+</head>
+ 
+<body>
+ 
+ Ingrese su mensaje: <input type="text" name="mensaje" id="mensaje">
+ 
+ <input type="button" value="enviar" onclick="enviar()">
+ 
+ </body>
+</html>
